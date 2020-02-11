@@ -1,0 +1,354 @@
+.forms
+    &_wave_bottom
+        background: url('../img/wave_up.svg') no-repeat center center 
+        //background-size: cover 
+        bottom: 0
+        z-index: 99
+        width: 100%
+        height: 184px
+        position: relative
+    &_wave_up
+        background: url('../img/wave.svg') no-repeat center center 
+        //background-size: cover 
+        top: 0
+        z-index: -10
+        transform: rotate(180deg)
+        z-index: 99
+        width: 100%
+        height: 184px
+        position: relative
+    &_features_wrap_users
+        position: relative
+        text-align: center 
+        margin-top: 40px
+    &_features_wrap_users::before 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 2px 
+        transform: translate(80px, -50%)
+        border-radius: 20px
+        top: 50% 
+        background: rgba(236, 240, 241,1.0)
+    &_features_wrap_users::after
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 2px 
+        transform: translate(-180px, -50%)
+        top: 50% 
+        background: rgba(236, 240, 241,1.0)
+    &_features_wrap_equipments_descriptions_showing 
+        font-size: 18px 
+        margin-top: 100px
+        background: rgba(236, 240, 241,1.0)
+        color: rgba(52, 152, 219,1.0)
+        border: none 
+        overflow: hidden
+        padding: 15px 15px
+        position: relative
+        text-transform: uppercase
+        transition: 1s ease
+    &_features_wrap_equipments_descriptions_showing:hover
+        transition: 0.4s ease
+        box-shadow: 0px 0px 5px rgba(44, 62, 80,1.0)
+    &_features_wrap_equipments_descriptions_showing:hover 
+        color: rgba(236, 240, 241,1.0)
+        z-index: 999
+        position: relative
+        transition: 1s
+    &_features_wrap_equipments_descriptions_showing::before 
+        position: absolute
+        content: ''
+        width: 0
+        z-index: -1
+        height: 100%
+        background: rgba(52, 152, 219,1.0)
+        top: 50% 
+        left: 50% 
+        transform: translate(-50%, -60%) 
+        transform-origin: center center
+        transition: 1s ease
+        opacity: 0
+    &_features_wrap_equipments_descriptions_showing:hover::before
+        width: 100%
+        top: 50% 
+        opacity: 1
+        z-index: -1
+        left: 50% 
+        transition: 0.4s ease
+        height: 150%
+        transform: translate(-50%, -60%) 
+        transform-origin: center center
+    &_features_wrap
+        display: flex 
+        justify-content: center
+        flex-wrap: wrap
+        flex-basis: 33.33%
+    &_features_wrap_schedule_title_content
+        color: rgba(236, 240, 241,1.0)
+        margin-left: -50px
+        z-index: 99
+        +tech
+        text-transform: uppercase
+        position: relative
+        font-size: 24px
+    &_features_wrap_equipments_descriptions_content
+        margin-top: 40px
+        position: relative
+    &_features_wrap_equipments_descriptions_content::before 
+        position: absolute
+        content: ''
+        width: 50px
+        transform: translate(-50%)
+        left: 20%
+        height: 2px 
+        border-radius: 20px
+        background: rgba(236, 240, 241,1.0)
+        bottom: -50px
+    &_features_wrap_equipments_descriptions_title
+        font-size: 20px
+        color: rgba(236, 240, 241,1.0)  
+        +tech
+    &_features_wrap_equipments_title_content
+        +tech 
+        text-transform: uppercase
+        color: rgba(236, 240, 241,1.0)
+        margin-left: -50px
+        font-size: 24px
+    &_features_wrap_equipments
+        margin-top: 40px
+        margin-left: 20px
+        margin-right: 20px
+        padding: 50px 
+        position: relative
+        border-bottom: 2px solid rgba(236, 240, 241,1.0)
+        border-right: 2px solid rgba(236, 240, 241,1.0)
+    &_features_wrap_equipments::before
+        position: absolute
+        content: ''
+        left: 0
+        background: rgba(236, 240, 241,1.0)
+        width: 2px
+        height: 250px 
+        bottom: 0
+    &_features_wrap_equipments::after
+        position: absolute
+        content: ''
+        right: 0
+        background: rgba(236, 240, 241,1.0)
+        width: 250px
+        height: 2px 
+        top: 0
+    &_features_wrap_schedule
+        padding: 50px 
+        margin-left: 20px
+        margin-right: 20px
+        position: relative
+        border-bottom: 2px solid rgba(236, 240, 241,1.0)
+        border-right: 2px solid rgba(236, 240, 241,1.0)
+        margin-top: 40px
+    &_features_wrap_schedule::before 
+        position: absolute
+        content: ''
+        left: 0
+        background: rgba(236, 240, 241,1.0)
+        width: 2px
+        height: 250px 
+        bottom: 0
+    &_features_wrap_schedule::after
+        position: absolute
+        z-index: 0
+        content: ''
+        right: 0
+        background: rgba(236, 240, 241,1.0)
+        width: 250px
+        height: 2px 
+        top: 0
+    &_settings_line
+        color: rgba(236, 240, 241,1.0)
+        +tech 
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 20px
+        position: relative
+    &_tables_center
+        color: rgba(236, 240, 241,1.0)
+        +tech
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 20px
+        position: relative
+    &_settings_line::before 
+        position: absolute
+        content: ''
+        left: 0
+        background: white 
+        bottom: 0
+        height: 2px
+    &_tables_right
+        width: 250px
+        margin-top: 40px
+        display: flex 
+        justify-content: space-between
+        position: relative
+    &_tables_hours 
+        color: rgba(236, 240, 241,1.0)
+        +tech 
+        font-size: 18px
+        text-transform: uppercase
+        margin-bottom: 20px
+        position: relative
+    &_tables_bottom_line::before
+        content: ''
+        position: absolute
+        width: 100%
+        bottom: 0
+        height: 2px 
+        background: #ffffff
+    &_features_wrap_form_suggestion
+        margin-top: 40px
+        margin-left: 20px
+        margin-right: 20px
+        padding: 50px 220px
+        position: relative
+        border-bottom: 2px solid rgba(236, 240, 241,1.0)
+        border-right: 2px solid rgba(236, 240, 241,1.0)
+        transition: 0.4s ease
+    &_features_wrap_form_suggestion_descriptions
+        position: relative
+        z-index: 99
+    &_features_wrap_form_suggestion::before 
+        position: absolute
+        content: ''
+        left: 0
+        background: rgba(236, 240, 241,1.0)
+        width: 2px
+        height: 250px 
+        bottom: 0
+    &_features_wrap_form_suggestion::after
+        position: absolute
+        content: ''
+        top: 0
+        background: rgba(236, 240, 241,1.0)
+        width: 450px
+        height: 2px 
+        right: 0
+    &_p_phone
+        margin-top: 40px
+        margin-bottom: 0
+        padding: 0
+    &_p_e_mail
+        margin-top: 40px
+        margin-bottom: 0px
+        padding: 0
+    &_features_wrap_form_suggestion_title_content
+        color: rgba(236, 240, 241,1.0)
+        margin-left: -220px
+        z-index: 99
+        +tech
+        text-transform: uppercase
+        position: relative
+        font-size: 24px
+    &_input_phone
+        box-shadow: 0px 0px 5px rgba(44, 62, 80,1.0)
+        background: rgba(236, 240, 241,1.0)
+        border: none
+        width: 250px
+        outline: none
+        padding: 15px 25px
+        font-size: 20px
+    &_input_e_mail
+        box-shadow: 0px 0px 5px rgba(44, 62, 80,1.0)
+        background: rgba(236, 240, 241,1.0)
+        border: none
+        width: 250px
+        outline: none
+        padding: 15px 25px
+        font-size: 20px
+    &_style_button_text
+        font-size: 18px
+        margin-top: 40px
+        width: 250px
+        transition: 1s ease
+    &_style_button_text:hover
+        transition: 0.4s ease
+        box-shadow: 0px 0px 5px rgba(44, 62, 80,1.0)
+    &_features
+        position: relative
+    &_features_title
+        text-align: center 
+        color: #ecf0f1
+        text-transform: uppercase 
+        font-size: 32px 
+        +tech
+
+@media (max-width: 876px)
+    .forms
+        &_features_wrap_form_suggestion
+            margin-top: 40px
+            margin-left: 20px
+            margin-right: 20px
+            padding: 50px 180px
+            position: relative
+            border-bottom: 2px solid rgba(236, 240, 241,1.0)
+            border-right: 2px solid rgba(236, 240, 241,1.0)
+        &_features_wrap_form_suggestion::before 
+            height: 250px 
+        &_features_wrap_form_suggestion::after
+            width: 250px
+        &_features_wrap_form_suggestion_title_content
+            color: rgba(236, 240, 241,1.0)
+            margin-left: -180px
+            z-index: 99
+            +tech
+            text-transform: uppercase
+            position: relative
+            font-size: 24px
+
+@media (max-width: 576px)
+    .forms
+        &_features_wrap_form_suggestion
+            margin-top: 40px
+            margin-left: 20px
+            margin-right: 20px
+            padding: 50px 50px
+            position: relative
+            border-bottom: 2px solid rgba(236, 240, 241,1.0)
+            border-right: 2px solid rgba(236, 240, 241,1.0)
+        &_features_wrap_form_suggestion_title_content
+            margin-left: -50px
+        &_tables_right 
+            width: 200px
+        &_input_phone
+            width: 200px
+        &_input_e_mail
+            width: 200px
+        &_style_button_text
+            width: 200px
+
+@media (max-width: 320px)
+    .forms
+        &_features_wrap_form_suggestion
+            margin-top: 40px
+            margin-left: 20px
+            margin-right: 20px
+            padding: 40px
+            position: relative
+            border-bottom: 2px solid rgba(236, 240, 241,1.0)
+            border-right: 2px solid rgba(236, 240, 241,1.0)
+        &_features_wrap_form_suggestion_title_content
+            margin-left: -40px
+        &_features_wrap_schedule
+            padding: 40px
+        &_features_wrap_form_schedule_title_content
+            margin-left: -40px
+        &_tables_right 
+            width: 200px
+        &_input_phone
+            width: 200px
+        &_input_e_mail
+            width: 200px
+        &_style_button_text
+            width: 200px
+       

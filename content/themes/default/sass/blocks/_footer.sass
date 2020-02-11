@@ -1,0 +1,96 @@
+.footer
+    color: rgba(236, 240, 241,1.0)
+    &_header
+        background: rgba(52, 73, 94,1.0)
+    &_header_wrap
+        margin-left: 40px 
+        margin-right: 40px
+        padding-top: 40px
+        display: flex 
+        justify-content: space-between
+        flex-wrap: wrap
+        //align-items: center
+    &_forms_button
+        margin-top: 20px
+    &_footer_wrap
+        margin-left: 40px 
+        margin-right: 40px
+        display: flex 
+        justify-content: space-between
+        align-items: center
+    &_footer
+        background: rgba(44, 62, 80,1.0)
+    &_header_wrap_title_content
+        font-size: 18px
+        +tech
+        text-transform: uppercase
+    &_header_wrap_account_title
+        font-size: 18px
+        +tech
+
+        text-transform: uppercase
+    &_header_wrap_about
+        width: 200px
+    &_header_wrap_account
+        margin-right: 20px 
+        padding-bottom: 40px
+    &_header_wrap_newsletter
+        margin-right: 20px
+        padding-bottom: 40px
+    &_header_wrap_account_list
+        list-style: none
+        margin: 0
+        padding: 0
+    &_header_wrap_account_links_about
+        color: rgba(236, 240, 241,1.0)
+        text-transform: uppercase
+        text-decoration: none
+    &_header_wrap_account_links
+        margin-top: 20px
+        margin-bottom: 20px
+        transition: 1s ease
+        position: relative
+    &_header_wrap_account_links::before 
+        position: absolute
+        width: 100%
+        transform: scale(0)
+        height: 2px 
+        background: rgba(236, 240, 241,1.0)
+        bottom: -5px
+        transition: 0.1s ease
+        content: ''
+    &_header_wrap_account_links:hover::before 
+        transition: 0.4s ease
+        transform: scale(1)
+    &_header_wrap_account_links::after
+        position: absolute
+        transition: 0.1s ease
+        width: 30%
+        left: 0
+        z-index: 99
+        transform: scale(0)
+        height: 2px 
+        background: rgba(41, 128, 185,1.0)
+        bottom: -5px
+        content: ''
+    &_header_wrap_account_links:hover::after
+        transition: 0.4s ease
+        transform: scale(1)
+    &_header_wrap_newsletter_title
+        font-size: 24px
+        +tech 
+        text-transform: uppercase
+    &_header_wrap_title
+        margin-right: 20px
+        padding-bottom: 40px
+    &_footer_wrap_logo
+        text-transform: uppercase 
+        +tech
+        font-size: 24px
+    &_header_wrap_newsletter_input
+        border: 2px solid rgba(44, 62, 80,1.0)
+        background: rgba(44, 62, 80,.6)
+        outline: none
+        color: rgba(236, 240, 241,1.0)
+        padding: 15px 15px
+        font-size: 18px

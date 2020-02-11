@@ -1,0 +1,110 @@
+.advantages 
+    background: rgba(44, 62, 80,1.0) 
+    &_wrap_features_single:hover 
+        transform: translateY(-25px) rotate3d(0,-90,0,0deg)
+        transform-style: preserve-3d
+        perspective-origin: center center
+        perspective: 10000px
+        //text-shadow: 0px 0px 3px rgba(236, 240, 241,1.0)
+        //background: rgba(41, 128, 185,1.0)
+        transition: 0.5s ease
+        //box-shadow: 0px 0px 12px rgba(41, 128, 185,1.0)
+    &_wrap_features
+        display: flex 
+        flex-wrap: wrap 
+        flex-basis: 25%
+        margin-top: 20px
+        justify-content: space-around 
+        align-items: center
+    &_wrap_features_third_img
+        margin: 0 auto
+        position: relative
+        width: 120px 
+        height: 120px
+        border-radius: 50%
+        background: rgba(236, 240, 241,1.0)
+    &_wrap_features_first_img
+        margin: 0 auto
+        position: relative
+        width: 120px 
+        height: 120px
+        border-radius: 50%
+        background: rgba(236, 240, 241,1.0)
+    &_wrap_features_second_img
+        position: relative
+        margin: 0 auto
+        width: 120px 
+        height: 120px
+        border-radius: 50%
+        background: rgba(236, 240, 241,1.0)
+    &_wrap_features_fourth_img
+        margin: 0 auto
+        position: relative
+        width: 120px 
+        height: 120px
+        border-radius: 50%
+        background: rgba(236, 240, 241,1.0)
+    &_wrap_content
+        font-size: 32px
+        padding-top: 40px
+        margin-bottom: 40px
+        text-align: center
+        //text-transform: uppercase
+        color: rgba(236, 240, 241, 1)
+        +tech
+        text-transform: uppercase
+    &_wrap_features_single
+        transition: 1s ease
+        margin-top: 20px
+        text-align: center
+        padding-left: 35px
+        padding-bottom: 25px
+        padding-right: 35px
+    &_wrap_feature_p 
+        +tech
+        text-transform: uppercase
+        font-size: 24px
+        position: relative
+        padding-top: 40px 
+        padding-bottom: 40px 
+        margin: 0
+        top: 0
+        color: rgba(236, 240, 241,1.0)
+    &_wrap_feature_p::before 
+        position: absolute
+        left: 50%
+        transform: translate(-50%, -20px)
+        content: ''
+        background: rgba(236, 240, 241,1.0)
+        width: 50% 
+        height: 2px
+    &_wrap_feature_p::after
+        position: absolute
+        left: 50%
+        transform: translate(-50%, 40px)
+        content: '&'
+        color: rgba(236, 240, 241,1.0)
+    &_wrap_feature_span
+        font-size: 18px
+        color: rgba(236, 240, 241,1.0)
+    &_wrap_title_bottom
+        position: relative
+        text-align: center
+    &_wrap_title_bottom::before 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 2px 
+        border-radius: 20px
+        transform: translate(75px, -50%)
+        top: 50%
+        background: rgba(236, 240, 241,1.0)
+    &_wrap_title_bottom::after
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 2px 
+        border-radius: 20px
+        transform: translate(-175px, -50%)
+        top: 50%
+        background: rgba(236, 240, 241,1.0)

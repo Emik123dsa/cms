@@ -1,0 +1,128 @@
+.experience
+    position: relative
+    background: rgba(236, 240, 241,0.95)
+    &_bottom
+        position: relative
+        background: rgba(44, 62, 80,0)
+        background-size: cover
+    &_footer
+        transform: rotate(180deg)
+    &_wrap_who_we_are
+        font-size: 32px 
+        text-align: center
+        +tech
+        letter-spacing: 2px
+        text-transform: uppercase
+        color: rgba(52, 152, 219,1.0)
+    &_line
+        height: 75px
+        top: 0
+        margin-bottom: 20px
+        position: relative
+    &_line::before
+        position: absolute
+        content: ''
+        background: rgba(52, 152, 219,1.0)
+        width: 100px
+        height: 3px
+        margin-top: 40px
+        left: 50% 
+        transform: translate(-50%)
+    &_wrap_features
+        margin-top: 0px
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        border-radius: 10px
+        //background: rgba(52, 152, 219,.1)
+    &_wrap_features_general
+        transition: 1s ease
+        padding-bottom: 20px
+        list-style: none
+        margin-bottom: 20px
+        padding-left: 50px 
+        padding-right: 50px
+        //transform: rotateX(45deg)
+        z-index: 99
+        text-align: center
+        position: relative
+    &_wrap_features_titles
+        z-index: 99
+        //padding-right: 50px
+        font-size: 32px
+        margin-top: 20px
+    &_wrap_features_titles::before
+        position: absolute
+        content: ''
+        left: 10%
+        top: 0
+        width: 50px 
+        height: 2px
+        background: rgba(44, 62, 80,.3)
+    &_wrap_features_titles::after
+        position: absolute
+        content: ''
+        left: 10%
+        top: 0
+        width: 2px 
+        height: 50px
+        background: rgba(44, 62, 80,.3)
+    &_wrap_features_subtitles
+        font-size: 24px
+    &_wrap_features_subtitles::before 
+        position: absolute
+        content: ''
+        right: 10%
+        bottom: 0
+        width: 2px 
+        height: 50px
+        background: rgba(44, 62, 80,.3)
+    &_wrap_features_subtitles::after 
+        position: absolute
+        content: ''
+        right: 10%
+        bottom: 0
+        width: 50px 
+        height: 2px
+        background: rgba(44, 62, 80,.3)
+    &_wrap_features_general::before
+        transform-origin: bottom right
+        transition: 0.4s ease
+        background: rgba(41, 128, 185,1.0)
+        width: 0
+        height: 0
+        z-index: -5
+        content: ''
+        position: absolute
+        top: 0
+        z-index: 0
+        left: 10%
+    &_wrap_features_general:hover 
+        color: rgba(41, 128, 185,1.0)
+        transition: 0.4s ease
+        //transform-origin: left top
+        transform: translateY(-15px)
+    &_wrap_features_general:hover::before
+        transform-origin: bottom right
+        transition: 0.4s ease
+        background: transparent
+        width: 80%
+        height: 100% 
+        z-index: -5
+        content: ''
+        position: absolute
+        top: 0
+        z-index: 0
+        left: 10%
+    &_bottom_line
+        position: relative
+    &_bottom_line::before 
+        position: absolute
+        content: ''
+        background: #3498db
+        width: 100px
+        height: 3px
+        margin-top: 40px
+        left: 50%
+        transform: translate(-50%)

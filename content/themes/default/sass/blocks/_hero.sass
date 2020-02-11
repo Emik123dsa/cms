@@ -1,0 +1,281 @@
+.hero
+    position: relative
+    padding-top: 250px
+    background: rgba(236, 240, 241, 1)
+    &_wrap_swtich_buttons
+    &_wrap_social_medias
+        position: absolute
+        display: flex 
+        top: 50%
+        flex-direction: column 
+        display: grid 
+        align-items: center
+        transform: translate(0, -50%)
+    &_wrap_swtich_buttons
+        top: 50%
+        flex-direction: column 
+        display: flex
+        position: absolute
+        right: 0
+        transform: translateY(-50%)
+    &_button
+        z-index: 1000
+        +tech
+        padding-right: 25px
+        color: rgba(236, 240, 241,1.0)
+        text-decoration: none
+        font-size: 28px
+    &_button_switch 
+        position: relative
+        margin-top: 15px
+        margin-bottom: 15px
+    &_button::before 
+        position: absolute
+        content: ''
+        background: rgba(236, 240, 241,1.0)
+        width: 100% 
+        height: 2px
+        bottom: 0 
+    &_wrap_social_medias::before 
+        position: absolute 
+        content: '' 
+        background: rgba(52, 152, 219,1.0)
+        border-radius: 10px
+        width: 2px 
+        height: 165px
+        top: -10px
+        left: 100%
+        transform-origin: top center
+        transform: translate(-50%) rotate(180deg)
+    &_wrap_social_medias::after
+        position: absolute 
+        content: '' 
+        background: rgba(52, 152, 219,1.0)
+        border-radius: 10px
+        width: 2px 
+        height: 165px
+        bottom: -10px
+        left: 100%
+        transform-origin: bottom center
+        transform: translate(-50%) rotate(180deg)
+    &_wrap_dentist_equipments
+        padding: 0
+        margin: 0
+        //transform: translateY(200px)
+    &_wrap_dentist_equipments_first 
+        height: 100vh
+        background: linear-gradient(to bottom, #ecf0f1,rgba(0, 210, 255, 0.2)), url('../img/slider_1.jpg') 
+        background-repeat: no-repeat
+        background-position: center top
+        background-size: cover
+        transition: 0.7s ease
+    &_wrap_dentist_equipments_second
+        height: 100vh
+        background: linear-gradient(to bottom, #ecf0f1,rgba(0, 210, 255, 0.2)), url('../img/slider_2.jpg') 
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: cover
+    &_wrap_dentist_equipments_third
+        height: 100vh
+        background: linear-gradient(to bottom, #ecf0f1,rgba(0, 210, 255, 0.2)), url('../img/slider_3.jpg') 
+        background-repeat: no-repeat
+        background-position: center top
+        background-size: cover
+    &_wrap_dentist_equipments_first_description_title
+        color: #3498db
+        margin-top: 30px
+        +tech
+        font-size: 48px
+    &_wrap_dentist_equipments_second_description_title
+        color: #3498db
+        margin-top: 30px
+        +tech
+        font-size: 48px
+    &_wrap_dentist_equipments_third_description_title 
+        color: #3498db
+        margin-top: 30px
+        +tech
+        font-size: 48px
+    &_wrap_dentist_equipments_first_description
+        margin-top: 25px
+        text-align: center
+        position: relative
+        z-index: 999
+    &_wrap_dentist_equipments_second_description    
+        margin-top: 25px
+        text-align: center
+        position: relative
+        z-index: 999
+    &_wrap_dentist_equipments_third_description    
+        margin-top: 25px
+        text-align: center
+        position: relative
+        z-index: 999
+    &_wrap_dentist_equipments_first_description_feature 
+        color: #34495e
+        +tech
+        font-size: 24px
+    &_wrap_dentist_equipments_second_description_feature
+        color: #34495e
+        +tech
+        font-size: 24px
+    &_wrap_dentist_equipments_third_description_feature
+        color: #34495e
+        +tech
+        font-size: 24px
+    &_wrap_dentist_equipments_first_button
+        +tech
+        margin-top: 30px
+        text-transform: uppercase 
+        background: #ecf0f1
+        color: rgba(52, 152, 219,1.0)
+        padding: 15px 35px
+        border: none
+        transition: 1s ease 
+    &_wrap_dentist_equipments_second_button
+        +tech
+        margin-top: 30px
+        text-transform: uppercase 
+        background: #ecf0f1
+        color: rgba(52, 152, 219,1.0)
+        padding: 15px 35px
+        border: none
+        transition: 1s ease 
+    &_wrap_dentist_equipments_third_button
+        +tech
+        margin-top: 30px
+        text-transform: uppercase 
+        background: #ecf0f1
+        color: rgba(52, 152, 219,1.0)
+        padding: 15px 35px
+        border: none
+        transition: 1s ease 
+    &_wrap_dentist_equipments_first_button:hover 
+        transition: 0.4s ease 
+        background: rgba(52, 152, 219,.8)
+        color: rgba(236, 240, 241,1.0)
+        transform-origin: center center 
+        transform: scale(1.1)
+    &_wrap_dentist_equipments_second_button:hover 
+        transition: 0.4s ease 
+        background: rgba(52, 152, 219,.8)
+        color: rgba(236, 240, 241,1.0)
+        transform-origin: center center 
+        transform: scale(1.1)
+    &_wrap_dentist_equipments_third_button:hover
+        transition: 0.4s ease 
+        background: rgba(52, 152, 219,.8)
+        color: rgba(236, 240, 241,1.0)
+        transform-origin: center center 
+        transform: scale(1.1)
+    &_wrap_dentist_equipments_first_feature
+        margin-bottom: 75px 
+        position: relative
+    &_wrap_dentist_equipments_second_feature
+        margin-bottom: 75px 
+        position: relative
+    &_wrap_dentist_equipments_third_feature   
+        margin-bottom: 75px 
+        position: relative
+    &_wrap_dentist_equipments_first_feature::before 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 3px 
+        border-radius: 50px
+        top: 50%
+        transform: translate(50px, -50%)
+        background: rgba(52, 152, 219,1.0)
+    &_wrap_dentist_equipments_second_feature::before 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 3px 
+        border-radius: 50px
+        top: 65%
+        transform: translate(60px, -50%)
+        background: rgba(52, 152, 219,1.0)
+    &_wrap_dentist_equipments_third_feature::before 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 3px 
+        border-radius: 50px
+        top: 50%
+        transform: translate(60px, -50%)
+        background: rgba(52, 152, 219,1.0)
+    &_wrap_dentist_equipments_first_feature::after 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 3px 
+        border-radius: 50px
+        top: 50%
+        transform: translate(-150px, -50%)
+        background: rgba(52, 152, 219,1.0)
+    &_wrap_dentist_equipments_second_feature::after 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 3px 
+        border-radius: 50px
+        top: 65%
+        transform: translate(-160px, -50%)
+        background: rgba(52, 152, 219,1.0)
+    &_wrap_dentist_equipments_third_feature::after 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 3px 
+        border-radius: 50px
+        top: 50%
+        transform: translate(-160px, -50%)
+        background: rgba(52, 152, 219,1.0)
+    &_wrap_dentist_equipments_first_mousescroll
+        margin-top: 30px
+        animation: mousescroll 2s ease infinite
+    &_wrap_dentist_equipments_second_mousescroll
+        margin-top: 30px
+        animation: mousescroll 2s ease infinite
+    &_wrap_dentist_equipments_third_mousescroll
+        margin-top: 30px
+        animation: mousescroll 2s ease infinite
+    &_wrap_social_medias
+        left: 5%
+        //transform: translateX(75px)
+        position: absolute
+        z-index: 99
+
+@keyframes mousescroll 
+    from, to 
+        transform: translateY(0px)
+    80%
+        transform: translateY(30px)
+
+.hero_wrap_dentist_equipments .slick-dots
+    display: flex
+    justify-content: center
+    transform: translateX(-10px)
+    li 
+       margin-left: 20px
+    li button
+        position: absolute
+        border-radius: 50%
+        width: 25px
+        height: 25px 
+        box-shadow: 0px 0px 12px rgba(236, 240, 241,.5)
+        background: rgba(236, 240, 241,1.0)
+        transform: translateY(-70px)
+        transition: 0.4s ease
+    li button:hover 
+        background: rgba(52, 152, 219,.7)
+        box-shadow: 0px 0px 5px rgba(41, 128, 185,.7)
+        transition: 0.4s ease
+    li.slick-active button 
+        transition: 0.4s ease
+        background: rgba(41, 128, 185,.7)
+        box-shadow: 0px 0px 12px rgba(41, 128, 185,.7)
+        transform: translateY(-70px) scale(1.3)
+
+@kyeframes
+

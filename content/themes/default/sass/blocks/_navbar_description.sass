@@ -1,0 +1,59 @@
+.navbar_description
+    background: linear-gradient(to top, rgba(236, 240, 241,1), rgba(189, 195, 199,0.7))
+    position: relative
+    &_wrap_search_content_title
+        margin-right: 12px
+    &_wrap
+        +tech
+        letter-spacing: 0.15px
+        color: rgba(41, 128, 185,1.0)
+        padding-top: 25px 
+        padding-bottom: 25px
+        display: flex 
+        flex-wrap: wrap
+        flex-basis: 100%
+        justify-content: space-between
+        align-items: center
+    &_wrap_content
+        display: flex 
+        flex-wrap: wrap
+        //justify-content: space-between
+        align-items: center
+    &_wrap_work_time
+        position: relative
+        padding-left: 30px
+    &_wrap_work_time::before 
+        position: absolute 
+        width: 2px 
+        height: 15px 
+        transform: translate(-1px)
+        left: 0
+        background: rgba(41, 128, 185,1.0)
+        content: ''
+    &_wrap_address_title
+        padding-right: 30px
+    &_wrap_address_title 
+        font-style: normal
+    &_wrap_search_content_icon 
+        position: relative
+        padding-right: 18px
+    &_wrap_search_content_icon::before
+
+        position: absolute
+        content: ''
+        border: 2px solid #34495e
+        width: 12px 
+        border-radius: 50%
+        height: 12px 
+        background: transparent
+    &_wrap_search_content_icon::after 
+        position: absolute 
+        content: ''
+        width: 2px
+        height: 10px 
+        bottom: 0
+        transform-origin: center center
+        border-radius: 10px
+        transform: rotate(-45deg) translate(8px, 12.5px)
+        background: #34495e
+        

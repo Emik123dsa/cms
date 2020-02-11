@@ -1,0 +1,54 @@
+* 
+    box-sizing: border-box
+
+.container 
+    max-width: 1170px
+    width: 100%
+    margin: 0 auto
+.header 
+    box-shadow: 0px 0px 25px rgba(52, 152, 219,1.0)
+  
+.header::before 
+    content: '' 
+
+html 
+    overflow-x: hidden
+
+body 
+    --col-deepblue: rgba(52, 152, 219,1.0)
+    +tech
+
+.bottom 
+    transform: rotate(180deg)
+li 
+    margin: 0
+    padding: 0
+ul 
+    display: block
+    padding: 0
+    margin: 0
+    list-style-type: disc
+    margin-block-start: 0
+    margin-block-end: 0
+    margin-inline-start: 0
+    margin-inline-end: 0
+    padding-inline-start: 0
+
+svg
+
+
+::-webkit-scrollbar  
+    width: 5px
+    height: 3px
+::-webkit-scrollbar-track   
+    background-color: #999
+::-webkit-scrollbar-track-piece 
+    background-color: #ffffff
+::-webkit-scrollbar-thumb  
+    height: 50px 
+    background-color: rgba(41, 128, 185,1.0)
+    border-radius: 3px
+::-webkit-scrollbar-corner  
+    background-color: rgba(41, 128, 185,1.0)
+::-webkit-resizer 
+    background-color: rgba(41, 128, 185,1.0)

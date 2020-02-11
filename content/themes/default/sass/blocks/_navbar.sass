@@ -1,0 +1,323 @@
+.navbar
+    background: rgba(236, 240, 241,1)
+    //box-shadow: 0px 0px 10px rgba(44, 62, 80,1.0)
+    &_main
+        transition: 1s ease
+        //position: fixed
+        opacity: 1
+        position: fixed
+        z-index: 999
+        width: 100%
+        transform: translateY(0px) scale(1) 
+    &_main_active 
+        box-shadow: 0px 0px 15px rgba(44, 62, 80,1.0)
+        opacity: 1 
+        animation: bouncemenu 1s ease 1
+        transform: translateY(-68px)
+        position: fixed
+        transform-origin: top center
+    &_main_active_mobile
+        box-shadow: 0px 0px 15px rgba(44, 62, 80,1.0)
+        opacity: 1 
+        position: fixed
+        transform-origin: top center
+    &_wrap_title 
+        display: flex
+        align-items: center 
+    &_wrap
+        position: relative
+        padding: 25px 0px
+        display: flex 
+        justify-content: space-between
+        align-items: center 
+    &_wrap_list_ul
+        list-style: none 
+        padding: 0
+        margin: 0
+        display: flex 
+        align-items: center
+    &_wrap_list_li 
+        font-size: 16px
+        padding-left: 20px
+        padding-right: 20px
+        +tech
+        
+    &_links 
+        text-decoration: none
+        color: rgba(44, 62, 80,1.0)
+    &_wrap_title_logo 
+        margin-left: 25px
+        +tech
+        color: rgba(52, 152, 219,1.0)
+        letter-spacing: 2px
+        position: relative
+        transition: 1s ease
+        //text-transform: uppercase 
+    &_wrap_title_logo::after 
+        position: absolute
+        content: ''
+        width: 100% 
+        height: 2px 
+        transform-origin: left center
+        transform: scale(0)
+        bottom: -10px
+        border-radius: 10px
+        left: 0
+        transition: 0.4s
+        background: #2980b9
+    &_wrap_title_logo:hover::after
+        transform: scale(1)
+        transition: 0.4s ease
+    &_wrap_logotype 
+        background: url('../img/logotype.png') no-repeat center 
+        background-size: contain 
+        //position: absolute
+        margin-left: 25px
+        width: 50px 
+        height: 50px 
+    &_wrap_telephone_title
+        +tech
+        font-size: 24px
+        margin-left: 10px
+        color: #2980b9
+        transition: 0.5s ease
+        z-index: 99
+    &_wrap_telephone_title:hover 
+        color: #3498db
+        transition: 0.4s ease
+    &_wrap_telephone
+        transition: 1s ease
+        padding-left: 20px
+    &_wrap_list_link
+        transition: 0.4s
+        position: relative
+    &_wrap_list_link::before 
+        position: absolute
+        width: 100%
+        height: 2px 
+        left: 0
+        transform: scale(0)
+        background: #2980b9
+        bottom: -5px
+        transition: 0.1s ease
+        content: ''
+    &_wrap_list_link:hover
+        color: #2980b9
+        transition: 0.4s ease
+    &_wrap_list_link:hover::before 
+        transition: 0.4s ease
+        transform: scale(1)
+    &_wrap_list_active
+        visibility: hidden 
+        transform: scale(0)
+        position: absolute
+    &_wrap_list_menu
+    &_wrap_list_responsive
+        visibility: hidden
+        position: absolute
+    
+
+@media (max-width: 1170px)
+    .navbar
+        &_wrap_list_ul
+            visibility: hidden
+        &_wrap_list_menu_link 
+            width: 30px
+            height: 30px 
+            //border: 1px solid black
+            position: absolute
+            right: 60px
+            top: 50% 
+            transform: translateY(-50%)
+        &_wrap_list_menu_about_link
+            //border: 1px solid black
+            right: 15px
+            top: 50% 
+            transform: translateY(-50%)
+            width: 30px
+            position: absolute
+            height: 30px 
+        &_wrap_list_menu_about
+            position: absolute
+            border-radius: 50%
+            width: 7px 
+            height: 7px 
+            top: 50%
+            left: 50% 
+            transform: translate(-50%, -50%)
+            background: #2980b9
+        &_wrap_list_menu_about::before
+            position: absolute
+            content: ''
+            border-radius: 50%
+            width: 7px 
+            height: 7px 
+            //left: 50% 
+            transform: translateY(-10px)
+            background: #2980b9
+        &_wrap_list_menu_about::after
+            content: ''
+            position: absolute
+            border-radius: 50%
+            width: 7px 
+            height: 7px 
+            //left: 50% 
+            transform: translateY(10px)
+            background: #2980b9
+        &_wrap_list_menu
+            width: 30px
+            height: 3px
+            background: rgba(41, 128, 185,1.0)
+            position: absolute
+            transition: 0.4s ease
+            content: ''
+            top: 50%
+            transform: translateY(-50%)
+            border-radius: 50px
+        &_wrap_list_menu_active 
+            transition: 0.4s 
+            height: 0
+            transform-origin: center center
+        &_wrap_list_responsive_menu
+            transform: translateX(-3000px)
+            z-index: -100
+            position: fixed
+            background: rgba(236, 240, 241,.9)
+            width: 300px
+            height: 100vh
+            top: 0
+            left: 0
+            //overflow-y: scroll
+            //overflow-x: hidden
+            content: ''
+            transition: 1s ease-in
+        &_wrap_list_responsive_menu_active
+            transition: 0.8s ease-out
+            transform: translateX(0px)
+        &_wrap_list_responsive_menu_li
+            margin: 15px 0
+            //background: black
+            width: 301px
+            text-align: left
+            list-style: none
+            padding: 15px 25px
+            overflow: hidden
+            z-index: 99
+            position: relative
+        &_wrap_list_responsive_menu_li:hover 
+        &_wrap_list_responsive_menu_li::before 
+            //transition: 0.4s ease 
+            width: 100%
+            left: 0
+            //transform: translate(-50%, -50%)
+            top: 0
+            height: 100%
+            position: absolute
+            transform: scale(0)
+            //transform-origin: center center
+            background: rgba(52, 152, 219,.3)
+            content: ''
+            opacity: 0
+            transition: 0.1s ease
+        &_wrap_list_responsive_menu_li:hover::before
+            width: 100%
+            opacity: 1
+            transform: scale(1)
+            //transform: translate(-50%, -50%)
+            left: 0
+            transition: 0.3s ease 
+            top: 0
+            height: 100%
+            //transform-origin: center 
+            position: absolute
+            background: rgba(52, 152, 219,.3)
+            content: '' 
+        &_wrap_list_responsive_menu_ul
+            position: absolute 
+            left: 50%
+            top: 240px
+            transform: translate(-50%, -50%)
+        &_wrap_list_responsive_menu_links
+            z-index: 9999
+            position: relative
+            font-size: 18px
+            text-decoration: none
+            //text-transform: uppercase
+            color: rgba(41, 128, 185,1.0)
+        &_wrap_list_menu::before 
+            transition: 0.4s ease
+            width: 30px
+            height: 3px
+            background: rgba(41, 128, 185,1.0)
+            position: absolute
+            content: ''
+            transform: translateY(10px)
+            border-radius: 50px
+        &_wrap_list_menu::after
+            transition: 0.4s ease
+            border-radius: 50px
+            width: 30px
+            height: 3px
+            background: rgba(41, 128, 185,1.0)
+            position: absolute
+            content: ''
+            transform: translateY(-10px)
+        &_description_wrap
+            padding: 0
+            margin: 0
+            width: 0 
+            height: 0
+            visibility: hidden
+        &_wrap
+            padding-top: 20px
+            padding-bottom: 20px
+        &_wrap_list_responsive
+            visibility: visible
+            position: relative
+        &_wrap_menu_search
+            color: #2c3e50
+            position: relative
+            margin-right: 100px
+        &_wrap_social_medias
+            position: absolute 
+            transform: scale(0)
+        &_wrap_list_menu_active::before
+            transition: 0.4s ease
+            width: 30px
+            height: 3px
+            background: rgba(41, 128, 185,.7)
+            position: absolute
+            content: ''
+           
+            transform: translateY(0px) rotate(-45deg)
+            border-radius: 50px
+        &_wrap_list_menu_active::after
+            //transform-origin: left bottom
+            transition: 0.4s ease
+            border-radius: 50px
+            width: 30px
+            height: 3px
+            background: rgba(41, 128, 185,.7)
+            position: absolute
+            content: ''
+            transform: translateY(0px) rotate(45deg)
+    
+
+
+@keyframes bouncemenu 
+    0%
+        transform: translateY(0px) scale(1) 
+    25%
+        transform: translateY(-68px) scale(1) 
+    50%
+        transform: translateY(-48px) scale(1) 
+    100%
+        transform: translateY(-68px) scale(1) 
+
+@keyframes telephone 
+    0%
+        transform: translateY(0px)
+    50%
+        transform: translateY(-10px)
+    100% 
+        transform: translateY(0px)

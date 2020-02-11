@@ -1,0 +1,174 @@
+.equipments
+    background: rgba(41, 128, 185,0.8)
+    //background: rgba(149, 165, 166,.8)
+    &_wrap_content
+        margin-top: 40px
+        text-align: center
+        position: relative
+    &_wrap_content::before 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 2px 
+        background: rgba(236, 240, 241,1.0)
+        transform: translate(70px, -50%)
+        top: 50%
+    &_wrap_content::after 
+        position: absolute
+        content: ''
+        width: 100px 
+        height: 2px 
+        background: rgba(236, 240, 241,1.0)
+        transform: translate(-170px, -50%)
+        top: 50%
+    &_wrap_title
+        text-align: center
+        font-size: 32px 
+        +tech
+        color: rgba(236, 240, 241,1.0)
+        text-transform: uppercase
+    &_wrap 
+        padding-top: 40px
+    &_wrap_slider
+        margin-top: 40px
+    &_wrap_slider_first_content
+
+    &_wrap_slider_description
+        width: 300px
+        margin-top: 40px
+        margin-left: 40px
+        margin-right: 40px
+    &_wrap_slider_convolution
+        display: flex
+        margin-bottom: 40px
+        //margin-top: 30px
+        justify-content: space-around
+        flex-wrap: wrap
+        align-items: center
+    &_wrap_slider_description_title
+        font-size: 32px
+        +tech 
+        position: relative
+        left: 50%
+        transform: translate(-50%)
+        padding-bottom: 40px
+        color: rgba(236, 240, 241,1.0)
+    &_wrap_slider_description_title::before 
+        position: absolute
+        content: ''
+        width: 100px
+        height: 2px 
+        background: rgba(236, 240, 241,1.0)
+        bottom: 0
+    &_wrap_slider_description_subtitle
+        margin-top: 40px
+        color: rgba(236, 240, 241,1.0)
+        font-size: 18px
+    &_wrap_slider_description_price
+        font-size: 32px 
+        +tech
+        color: rgba(236, 240, 241,1.0)
+        padding-top: 30px
+        padding-bottom: 10px
+        position: relative
+    &_wrap_slider_description_price::before 
+        position: absolute
+        content: ''
+        width: 100px
+        height: 2px 
+        background: rgba(236, 240, 241,1.0)
+        top: 0
+    &_button_purchase
+        margin-top: 20px
+    &_button_view_all
+        margin-top: 20px
+    &_wrap_img_general
+        width: 600px
+    &_wrap_slider .slick-prev 
+        position: absolute
+        content: ''
+        margin-bottom: 20px
+        left: 50% 
+        transform: translate(-50%, 100px)
+        width: 40px 
+        margin-left: -25px
+        z-index: 99
+        bottom: 0
+        border: 2px solid rgba(236, 240, 241,1.0)
+        height: 40px
+        background: rgba(236, 240, 241,.2)
+    &_wrap_slider .slick-prev::before 
+        position: absolute
+        content: ''
+        left: 50% 
+        top: 50%
+        transform: translate(-50%, -50%) rotate(45deg)
+        width: 10px
+        z-index: 99
+        height: 3px
+        transform-origin: left top
+        background: rgba(236, 240, 241,1)
+    &_wrap_slider .slick-prev::after
+        position: absolute
+        content: ''
+        left: 50% 
+        top: 50%
+        transform: translate(-50%, -50%) rotate(-45deg)
+        width: 10px
+        z-index: 99
+        height: 3px
+        transform-origin: left bottom
+        background: rgba(236, 240, 241,1)
+    &_wrap_slider .slick-next 
+        margin-bottom: 20px
+        z-index: 99
+        position: absolute
+        background: rgba(236, 240, 241,.2)
+        content: ''
+        margin-left: 25px
+        left: 50% 
+        bottom: 0
+        border: 2px solid rgba(236, 240, 241,1.0)
+        transform: translate(-50%, 100px)
+        width: 40px 
+        height: 40px
+    &_wrap_slider .slick-next::before 
+        position: absolute
+        content: ''
+        left: 50% 
+        top: 50%
+        transform: translate(-50%, -50%) rotate(-45deg)
+        width: 10px
+        z-index: 99
+        height: 3px
+        transform-origin: right top
+        background: rgba(236, 240, 241,1)
+    &_wrap_slider .slick-next::after
+        position: absolute
+        content: ''
+        left: 50% 
+        top: 50%
+        transform: translate(-50%, -50%) rotate(45deg)
+        width: 10px
+        z-index: 99
+        height: 3px
+        transform-origin: right bottom
+        background: rgba(236, 240, 241,1)
+    &_footer
+        background: url('../img/bottom.svg') no-repeat center 
+        background-size: cover 
+        height: 320px
+        transform: rotate(180deg)
+       
+
+@media (max-width: 576px)
+    .equipments
+        &_wrap_img_general
+            width: 380px
+        
+
+@media (max-width: 346px)
+    .equipments
+        &_wrap_img_general
+            width: 280px
+    

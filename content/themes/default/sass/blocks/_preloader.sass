@@ -1,0 +1,21 @@
+#page-preloader
+    position: fixed 
+    width: 100%
+    height: 100%
+    background: #EDFCFF
+    z-index: 99999
+
+.preloader
+    position: absolute 
+    content: ''
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background: url('../img/preloader-gif.gif') no-repeat center
+    padding: 100px
+
+.done 
+    transition: 1s ease
+    transform: translateY(-100%)
+    opacity: 0
+
